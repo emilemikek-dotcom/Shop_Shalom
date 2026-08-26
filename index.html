@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Shalom - Votre boutique en ligne</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Shop<span> <span>Shalom</span></a>
+
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#produits">Produits</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="cart-btn" onclick="ouvrirPanier()">
+                🛒 Panier <span id="cart-count">0</span>
+            </button>
+        </nav>
+    </header>
+
+
+    <!-- ACCUEIL -->
+    <main>
+
+        <section id="accueil" class="hero">
+            <div class="hero-content">
+                <p class="small-title">BIENVENUE CHEZ SHOP SHALOM</p>
+
+                <h1>
+                    Découvrez nos produits
+                    <span>électroniques et accessoires.</span>
+                </h1>
+
+                <p>
+                    Trouvez facilement vos produits préférés
+                    et commandez directement auprès de Shop Shalom.
+                </p>
+
+                <a href="#produits" class="btn">
+                    Découvrir nos produits
+                </a>
+            </div>
+
+            <div class="hero-image">
+                <div class="shop-card">
+                    <img src="file_000000007a9c71f4960884c4ed616a4e.png" alt="ttt" width="200px">
+                    <h2>Shop Shalom</h2>
+                    <p>Votre boutique de confiance</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- PRODUITS -->
+        <section id="produits" class="products-section">
+
+            <div class="section-title">
+                <p>NOS PRODUITS</p>
+                <h2>Découvrez notre sélection</h2>
+            </div>
+
+            <!-- RECHERCHE -->
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="Rechercher un produit..."
+                    onkeyup="rechercherProduit()"
+                >
+            </div>
+
+            <div class="products" id="products-container">
+
+                <article class="product-card">
+                    <div class="product-image"><img src="images (5).jpeg" alt="" width="150px"></div>
+
+                    <div class="product-info">
+                        <h3>CASK Blutooth</h3>
+                        <p>Cask Blutooth confortable et élégant.</p>
+
+                        <div class="product-bottom">
+                            <strong>35 000 FC</strong>
+
+                            <button onclick="ajouterAuPanier('Cask Blutooth', 35000)">
+                                Ajouter
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="product-card">
+                    <div class="product-image"><img src="Scf57dbf7dc2a4d5a914098f4dba27333O.jpg" alt="mike" width="150px"></div>
+
+                    <div class="product-info">
+                        <h3>Torche</h3>
+                        <p>Torche modernes pour tous les jours.</p>
+
+                        <div class="product-bottom">
+                            <strong>40 000 FC</strong>
+
+                            <button onclick="ajouterAuPanier('Torche', 40000)">
+                                Ajouter
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="product-card">
+                    <div class="product-image"><img src="WhatsApp_Image_2026-05-04_at_9.35.21_AM.jpg" alt="" width="150px"></div>
+
+                    <div class="product-info">
+                        <h3>Montre+Airpods</h3>
+                        <p>Montre intelligente est elegant pour ton bonheure.</p>
+
+                        <div class="product-bottom">
+                            <strong>75 000 FC</strong>
+
+                            <button onclick="ajouterAuPanier('Montre intelligente', 75000)">
+                                Ajouter
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="product-card">
+                    <div class="product-image"><img src="BKUED25031712MXWF65.jpg"  width="150px"></div>
+
+                    <div class="product-info">
+                        <h3>Power bank</h3>
+                        <p>Un Power élégante pour votre energie.</p>
+
+                        <div class="product-bottom">
+                            <strong>80 000 FC</strong>
+
+                            <button onclick="ajouterAuPanier('Power', 80000)">
+                                Ajouter
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- POURQUOI NOUS -->
+        <section class="why-us">
+
+            <div class="section-title">
+                <p>POURQUOI NOUS CHOISIR ?</p>
+                <h2>Shop Shalom, simplement.</h2>
+            </div>
+
+            <div class="advantages">
+
+                <div class="advantage">
+                    <div>⭐</div>
+                    <h3>Qualité</h3>
+                    <p>Nous sélectionnons des produits intéressants pour nos clients.</p>
+                </div>
+
+                <div class="advantage">
+                    <div>💰</div>
+                    <h3>Prix intéressants</h3>
+                    <p>Des prix adaptés à notre clientèle.</p>
+                </div>
+
+                <div class="advantage">
+                    <div>📱</div>
+                    <h3>Commande facile</h3>
+                    <p>Contactez-nous directement pour passer votre commande.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- À PROPOS -->
+        <section id="apropos" class="about">
+
+            <div>
+                <p class="small-title">À PROPOS</p>
+
+                <h2>Bienvenue chez Shop Shalom</h2>
+
+                <p>
+                    Shop Shalom est une magasin qui souhaite offrir
+                    une expérience simple et pratique à ses clients.
+                </p>
+
+                <p>
+                    Notre objectif est de permettre à chacun de découvrir
+                    facilement nos produits et de commander rapidement.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+        <section id="contact" class="contact">
+
+            <div class="section-title">
+                <p>CONTACT</p>
+                <h2>Besoin d'un renseignement ?</h2>
+            </div>
+
+            <div class="contact-card">
+
+                <p>📱 WhatsApp</p>
+                <a href="#" id="whatsapp-link">
+                    Nous contacter sur WhatsApp
+                </a>
+
+                <p>📞 Téléphone</p>
+                <a href="tel:+243842660469">
+                    +243 842660469
+                </a>
+
+                <p>📍 Localisation</p>
+                <span>RDC</span>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- PANIER -->
+    <div id="cart-modal" class="modal">
+
+        <div class="modal-content">
+
+            <button class="close" onclick="fermerPanier()">×</button>
+
+            <h2>🛒 Mon panier</h2>
+
+            <div id="cart-items"></div>
+
+            <div class="cart-total">
+                Total :
+                <strong id="cart-total">0 FC</strong>
+            </div>
+
+            <button class="order-btn" onclick="commander()">
+                Commander sur WhatsApp
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <h2>Shop Shalom</h2>
+
+        <p>
+            Votre boutique de confiance.
+        </p>
+
+        <p>
+            © 2026 Shop Shalom — Tous droits réservés.
+        </p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
